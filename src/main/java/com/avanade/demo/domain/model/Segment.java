@@ -12,8 +12,18 @@ public class Segment {
     @Column(nullable = false)
     private String name;
 
+    public Segment(String name) {
+        this.name = name;
+    }
+
+    //getters and setters
+
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
